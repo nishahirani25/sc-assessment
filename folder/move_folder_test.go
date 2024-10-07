@@ -3,13 +3,12 @@ package folder
 import (
 	"testing"
 
-	"github.com/gofrs/uuid" // Ensure you import the uuid package
+	"github.com/gofrs/uuid" 
 	"github.com/stretchr/testify/assert"
 )
 
 func Test_folder_MoveFolder(t *testing.T) {
-	// Create UUIDs for organization IDs
-	orgID, _ := uuid.NewV4() // Create a new UUID for orgID
+	orgID, _ := uuid.NewV4() 
 
 	tests := [...]struct {
 	name     string
